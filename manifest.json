@@ -1,0 +1,23 @@
+{
+  "id": "gym_leader_rush",
+  "name": "Gym Leader Rush + Shuffle",
+  "version": "0.3.1",
+  "entry": "main.lua",
+  "api": 2,
+  "game_version": ">=0.3.51",
+  "category": "GAMEPLAY",
+  "profile": "content",
+  "games": [
+    "red",
+    "blue",
+    "yellow",
+    "gold",
+    "silver",
+    "crystal"
+  ],
+  "affects_link": false,
+  "permissions": [
+    "engine_internals"
+  ],
+  "description": "All-in-one sequential Gym Leader Rush with persistent Gym Leader Shuffle mechanics, shuffled gym NPC rosters, visiting-leader party scaling, per-save optional move randomization, EXP scaling, area shops, Gen 1 Victory Road handoff, and the Gen 2 Johto-to-Kanto continuation. Supports only the original Gen 1 and Gen 2 game targets, including Crystal; excluded from FireRed, LeafGreen, and Emerald."
+}
