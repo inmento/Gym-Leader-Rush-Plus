@@ -1203,6 +1203,11 @@ return function(mod)
     }))
   end
 
+  -- Forward-declare this callback because promptRush's YES handler invokes it
+  -- before the implementation appears below. Otherwise Lua resolves
+  -- promptShuffle as a nil global in the mod sandbox.
+  local promptShuffle
+
   local function promptRush()
     if state.promptOpen then return end
     state.promptOpen = true
@@ -1218,7 +1223,7 @@ return function(mod)
       end)
   end
 
-  local function promptShuffle()
+  promptShuffle = function()
     if state.shufflePromptOpen then return end
     state.shufflePromptOpen = true
     local game = mod.game

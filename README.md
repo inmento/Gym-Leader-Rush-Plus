@@ -1,4 +1,4 @@
-# Gym Leader Rush + Shuffle 0.3.1
+# Gym Leader Rush + Shuffle 0.3.2
 
 All-in-one Gen1Recomp API 2 mod combining Gym Leader Rush with the core Gym Leader Shuffle mechanics.
 

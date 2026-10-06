@@ -1,5 +1,10 @@
 # Changelog
 
+## 0.3.2 — Startup prompt crash fix
+
+- Fixed the crash after answering YES to the Gym Leader Rush prompt. The callback previously referenced `promptShuffle` before its local declaration, so Lua resolved it as a nil global. The function is now forward-declared and assigned safely.
+- This fixes `main.lua:1217: attempt to call global 'promptShuffle' (a nil value)`.
+
 ## 0.3.1 — Gen1Recomp 0.3.51 compatibility repair
 
 This release was compared against the supplied Gym Leader Rush+ archive, the existing Gym Leader Shuffle, Randomized Gym Challenge, Red+ Scaling Core, and Red+ Randomization Core implementations, and the current Gen1Recomp source/API.

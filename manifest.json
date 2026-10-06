@@ -1,7 +1,7 @@
 {
   "id": "gym_leader_rush",
   "name": "Gym Leader Rush + Shuffle",
-  "version": "0.3.1",
+  "version": "0.3.2",
   "entry": "main.lua",
   "api": 2,
   "game_version": ">=0.3.51",
