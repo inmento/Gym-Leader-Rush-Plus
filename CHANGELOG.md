@@ -1,5 +1,10 @@
 # Changelog
 
+## 2026-10-06 — Gen1Recomp 0.3.57 compatibility refresh
+- Raised the manifest engine requirement to `>=0.3.57` while preserving any existing upper bound.
+- Audited the Gen1Recomp v0.3.54–v0.3.57 release and source diff; no Gen 1/Gen 2 public hook or Mod API change used by this mod required a Lua code change.
+- This is a compatibility metadata/documentation refresh; gameplay behavior, save formats, assets, and progression rules are unchanged.
+
 ## 0.3.2 — Startup prompt crash fix
 
 - Fixed the crash after answering YES to the Gym Leader Rush prompt. The callback previously referenced `promptShuffle` before its local declaration, so Lua resolved it as a nil global. The function is now forward-declared and assigned safely.
